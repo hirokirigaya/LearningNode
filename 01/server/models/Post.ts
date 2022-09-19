@@ -1,7 +1,7 @@
 import db from "./db";
 import { STRING, TEXT } from "sequelize";
 
-const Post = db.sequelize.define("postagens", {
+const Post = db.sequelize.define("posts", {
   title: {
     type: STRING,
   },
@@ -10,4 +10,4 @@ const Post = db.sequelize.define("postagens", {
   },
 });
 
-Post.sync({ force: true });
+export default Post;

@@ -1,5 +1,4 @@
 import { Sequelize } from "sequelize";
-
 // Conection with database
 const sequelize = new Sequelize("postapp", "root", "admin", {
   host: "localhost",
